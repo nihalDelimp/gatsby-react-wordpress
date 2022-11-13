@@ -9,7 +9,7 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-wordpress',
     options: {
-      "url": "https://dev-nihal-react.pantheonsite.io/graphql"
+      "url": "https://dev-manish-react.pantheonsite.io/graphql"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
