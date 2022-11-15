@@ -7,6 +7,7 @@ const Page = ({ data }) => {
 
   const page = data.wpPage
   console.log("Nihalll", page)
+  console.log("Nihalll2", page)
   return (
     <article>
       <h1>{page.title}</h1>
