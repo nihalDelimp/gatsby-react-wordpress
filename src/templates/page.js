@@ -4,7 +4,9 @@ import { graphql } from "gatsby"
 import parse from 'html-react-parser';
 
 const Page = ({ data }) => {
+
   const page = data.wpPage
+  console.log("Nihalll", page)
   return (
     <article>
       <h1>{page.title}</h1>
