@@ -9,7 +9,13 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-wordpress',
     options: {
-      "url": "https://dev-manish-react.pantheonsite.io/graphql"
+      "url": "https://wordpress-gatsby.azurewebsites.net/graphql",
+      schema: {
+        perPage: 2, // currently set to 100
+        requestConcurrency: 5, // currently set to 15
+        previewRequestConcurrency: 2, // currently set to 5
+      }
+      // "url": "https://dev-alfanar-wp.pantheonsite.io/graphql"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
