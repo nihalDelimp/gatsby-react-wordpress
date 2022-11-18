@@ -11,7 +11,7 @@ const Page = ({ data }) => {
   return (
     <article>
       <h1>{page.title}</h1>
-      <h1>{parse(page.content)}</h1>
+      <h1>{page.content !== null && parse(page.content)}</h1>
       <div>{page.image}</div>
 
     </article>
