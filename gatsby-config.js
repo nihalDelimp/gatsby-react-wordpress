@@ -10,9 +10,9 @@ module.exports = {
     resolve: 'gatsby-source-wordpress',
     options: {
       // "url": "https://alfanar-new.azurewebsites.net/graphql",
-      "url": "https://wordpress-gatsby.azurewebsites.net/graphql",
+      // "url": "https://wordpress-gatsby.azurewebsites.net/graphql",
       // "url": "https://dev-nihal-react.pantheonsite.io/graphql",
-      // "url": "https://alfanar-new.azurewebsites.net/graphql",
+      "url": "https://alfanar-new.azurewebsites.net/graphql",
       // "url": "https://dev-alfnar-new.pantheonsite.io/graphql",
       schema: {
         perPage: 2, // currently set to 100
