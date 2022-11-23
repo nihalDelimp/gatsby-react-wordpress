@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
-    "gatsby": "^5.0.0",
+    "gatsby": "^5.1.0",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-manifest": "^5.0.0",
     "gatsby-plugin-mdx": "^5.0.0",
@@ -27,7 +27,7 @@
     "gatsby-plugin-sharp": "^5.0.0",
     "gatsby-plugin-sitemap": "^6.0.0",
     "gatsby-source-filesystem": "^5.0.0",
-    "gatsby-source-wordpress": "^7.0.0",
+    "gatsby-source-wordpress": "^7.1.0",
     "gatsby-transformer-sharp": "^5.0.0",
     "html-react-parser": "^3.0.4",
     "postcss": "^8.4.18",
