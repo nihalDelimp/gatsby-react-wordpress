@@ -15,16 +15,21 @@
 
 
 
+
 @import url('https://alfanar-new.azurewebsites.net/wp-includes/css/dashicons.min.css?ver=6.1');
 @import url('https://alfanar-new.azurewebsites.net/wp-includes/css/admin-bar.min.css?ver=6.1');
-@import url('https://alfanar-new.azurewebsites.net/wp-content/themes/astra/assets/css/minified/main.min.css?ver=3.9.4');
+@import url('https://wpstorage10fd4cc6f0.blob.core.windows.net/wpblob10fd4cc6f0/wp-content/themes/astra-child-astra-child/style.css?ver=6.1.1');
+@import url('https://wpstorage10fd4cc6f0.blob.core.windows.net/wpblob10fd4cc6f0/wp-content/themes/astra/assets/css/minified/main.min.css?ver=3.9.4');
 @import url('https://alfanar-new.azurewebsites.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1');
-@import url('https://alfanar-new.azurewebsites.net/wp-content/themes/astra-child-astra-child/style.css?ver=6.1');
-@import url('https://alfanar-new.azurewebsites.net/wp-content/uploads/uag-plugin/assets/0/uag-css-78-1669635244.css?ver=2.0.15');
+@import url('https://wpstorage10fd4cc6f0.blob.core.windows.net/wpblob10fd4cc6f0/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/slick.min.css?ver=2.0.15');
+@import url('https://alfanar-new.azurewebsites.net/wp-content/uploads/uag-plugin/assets/0/uag-css-78-1669701165.css?ver=2.0.15');
+@import url('https://alfanar-new.azurewebsites.net/wp-content/uploads/uag-plugin/assets/0/uag-css-328-1669642222.css?ver=2.0.15');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'); 
+@import url('./astra-custom.css');
+@import url('./global-astra.css');
+/* @import url(''); */
 /* @import url('https://dev-alfanar-wp.pantheonsite.io/wp-content/uploads/uag-plugin/assets/0/uag-css-5-1669614348.css?ver=2.0.16'); */
 /* 
-
 /* @import url('https://newwordpre-3907c17cdfd91547967f-endpoint.azureedge.net/blobnewwordpre75988eb597/wp-content/uploads/uag-plugin/assets/0/uag-css-78-1669375935.css?ver=2.0.15'); */
 /* https://newwordpre-3907c17cdfd91547967f-endpoint.azureedge.net/blobnewwordpre75988eb597/wp-content/uploads/uag-plugin/assets/0/uag-css-78-1669375935.css?ver=2.0.15 */
 /* @import url('https://dev-alfnar-new.pantheonsite.io/wp-content/uploads/uag-plugin/assets/0/uag-css-78-1669615944.css?ver=2.0.15'); */
