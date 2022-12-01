@@ -12,7 +12,14 @@ const path = require(`path`)
  */
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions;
+  createRedirect({
+    fromPath: '/',
+    exactPath: true,
+    isPermanent: false,
+    redirectInBrowser: true,
+    toPath: '/home/',
+  });
 
   // Query all the data
   const queryResult = await graphql(`
@@ -39,8 +46,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: decodeURIComponent(page.uri),
       component: path.resolve(`./src/templates/page.js`),
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
         databaseId: page.databaseId,
         uri: page.uri
       },

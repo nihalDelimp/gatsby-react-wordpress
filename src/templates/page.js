@@ -11,7 +11,6 @@ const Page = ({ data }) => {
       <Script src='https://alfanar-new.azurewebsites.net/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js' strategy="idle" />
       <Script src='https://alfanar-new.azurewebsites.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' strategy="idle" />
       <Script src="https://wpstorage10fd4cc6f0.blob.core.windows.net/wpblob10fd4cc6f0/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/slick.min.js?ver=2.0.15" strategy="idle" />
-      <Script async src='https://alfanar-new.azurewebsites.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' strategy="off-main-thread" />
       <Script src='https://alfanar-new.azurewebsites.net/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js' strategy="idle" />
       <Script src='https://alfanar-new.azurewebsites.net/wp-includes/js/admin-bar.min.js?ver=6.1' id='admin-bar-js' strategy="idle" />
       <Script src="https://wpstorage10fd4cc6f0.blob.core.windows.net/wpblob10fd4cc6f0/wp-content/themes/astra-child-astra-child/asset/custom.js?ver=1866131814" strategy="idle" />
