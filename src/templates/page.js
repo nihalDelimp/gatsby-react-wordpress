@@ -4,6 +4,7 @@ import parse from 'html-react-parser';
 import './stylestatic.css';
 import { Helmet } from "react-helmet";
 const Page = ({ data }) => {
+  console.log(page)
   const page = data.wpPage
   return (
     <article>
