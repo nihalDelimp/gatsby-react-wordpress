@@ -13,7 +13,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build && node -v && npm -v",
+    "build": "npm i && gatsby build && node -v && npm -v",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -32,6 +32,7 @@
     "html-react-parser": "^3.0.4",
     "postcss": "^8.4.18",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   }
 }
