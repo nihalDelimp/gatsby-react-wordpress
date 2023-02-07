@@ -13,7 +13,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "npm i && gatsby build && node -v && npm -v",
+    "build": "gatsby build && node -v && npm -v",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },

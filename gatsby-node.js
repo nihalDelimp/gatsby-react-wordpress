@@ -13,13 +13,7 @@ const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions;
-  createRedirect({
-    fromPath: '/',
-    exactPath: true,
-    isPermanent: false,
-    redirectInBrowser: true,
-    toPath: '/',
-  });
+
 
   // Query all the data
   const queryResult = await graphql(`
