@@ -18,7 +18,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     exactPath: true,
     isPermanent: false,
     redirectInBrowser: true,
-    toPath: '/home/',
+    toPath: '/',
   });
 
   // Query all the data
@@ -40,7 +40,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Generate single page pages
   const pages = queryResult.data.pageQuery.nodes
-  console.log(pages, "Nihal Pages")
+  console.log(queryResult, "Nihal Pages")
   pages.forEach(page => {
     createPage({
       path: decodeURIComponent(page.uri),

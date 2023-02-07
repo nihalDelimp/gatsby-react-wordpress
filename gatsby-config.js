@@ -13,7 +13,7 @@ module.exports = {
       // "url": "https://wordpress-gatsby.azurewebsites.net/graphql",
       // "url": "https://dev-nihal-react.pantheonsite.io/graphql",
       // "url": "https://dev-manish-react.pantheonsite.io/graphql",
-      "url": "https://alfanar-new.azurewebsites.net/graphql",
+      "url": "https://dev-alfanar-nihal.pantheonsite.io/graphql",
       // "url": "https://dev-alfnar-new.pantheonsite.io/graphql",
       // "url": "https://new-wordpress-nihal.azurewebsites.net/graphql",
       // "url": "https://new-wordpress-nihal.azurewebsites.net/graphql",
@@ -35,8 +35,6 @@ module.exports = {
           exclude: true,
         },
       },
-
-      // "url": "https://dev-alfanar-wp.pantheonsite.io/graphql"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
