@@ -5,6 +5,7 @@ import './stylestatic.css';
 import { Helmet } from "react-helmet";
 const Page = ({ data }) => {
   const page = data.wpPage
+  console.log(page, "hello")
   return (
     <article>
       <Helmet>
