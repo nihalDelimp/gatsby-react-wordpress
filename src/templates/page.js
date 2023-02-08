@@ -3,10 +3,12 @@ import { graphql } from "gatsby"
 import parse from 'html-react-parser';
 import './stylestatic.css';
 import { Helmet } from "react-helmet";
+import Header from "../components/Header";
 const Page = ({ data }) => {
   const page = data.wpPage
   return (
     <article>
+      <Header />
       <Helmet>
         <link rel='stylesheet' id='dashicons-css' href='https://dev-alfanar-nihal.pantheonsite.io/wp-includes/css/dashicons.min.css?ver=6.1.1' type='text/css' media='all' />
         <link rel='stylesheet' id='admin-bar-css' href='https://dev-alfanar-nihal.pantheonsite.io/wp-includes/css/admin-bar.min.css?ver=6.1.1' type='text/css' media='all' />

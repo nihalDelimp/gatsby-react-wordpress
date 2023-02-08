@@ -1,13 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+
 
 import MainNav from "./MainNav"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `lightblue`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -22,11 +22,11 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `red`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+
         </Link>
       </h1>
     </div>
@@ -34,12 +34,6 @@ const Header = ({ siteTitle }) => (
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

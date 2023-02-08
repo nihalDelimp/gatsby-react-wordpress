@@ -1,31 +1,9 @@
+
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import UniversalLink from "./UniversalLink"
-import { FlatListToHierarchical } from "./FlatListToHierarchical"
 
 import * as styles from "./MainNav.module.css"
-
-const MenuLoop = ({ menuItems }) => {
-    return (
-        <ul>
-            {menuItems.map((menuItem, index) => {
-                return (
-                    <li
-                        key={index}
-                        className={menuItem.children.length > 0 ? "has-submenu" : undefined}
-                    >
-                        <UniversalLink to={menuItem.path} activeClassName="current-page">
-                            {menuItem.title}
-                        </UniversalLink>
-                        {menuItem.children.length > 0 && (
-                            <MenuLoop menuItems={menuItem.children}></MenuLoop>
-                        )}
-                    </li>
-                )
-            })}
-        </ul>
-    )
-}
 
 const MainNav = () => {
     const wpMenu = useStaticQuery(graphql`
@@ -33,31 +11,33 @@ const MainNav = () => {
       allWpMenuItem(
         sort: { fields: order, order: ASC }
         filter: {
-          menu: { node: { slug: { eq: "all-pages" } } }
+          menu: { node: { slug: { eq: "allpages" } } }
           parentDatabaseId: { eq: 0 }
         }
       ) {
         nodes {
-          id
           title: label
           path
-          parentId
         }
       }
     }
   `)
-    console.log("Raw data:", wpMenu.allWpMenuItem.nodes)
 
-    const headerMenu = FlatListToHierarchical(wpMenu.allWpMenuItem.nodes, {
-        idKey: "id",
-        childrenKey: "children",
-        parentKey: "parentId",
-    })
-    console.log("headerMenu: ", headerMenu)
-
+    const menuItems = wpMenu.allWpMenuItem.nodes
+    console.log(menuItems, "menuItemsmenuItemsmenuItemsmenuItems")
     return (
         <nav className={styles.mainnav}>
-            {headerMenu.length > 0 && <MenuLoop menuItems={headerMenu}></MenuLoop>}
+            <ul>
+                {menuItems.map((menuItem, index) => {
+                    return (
+                        <li key={index}>
+                            <UniversalLink to={menuItem.path} activeClassName="current-page">
+                                {menuItem.title}
+                            </UniversalLink>
+                        </li>
+                    )
+                })}
+            </ul>
         </nav>
     )
 }
