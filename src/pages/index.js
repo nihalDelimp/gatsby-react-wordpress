@@ -5,10 +5,11 @@ import Header from "../components/Header"
 
 
 const IndexPage = ({ data }) => {
-
+  console.log(data, "Datattatatta")
   return (
     <div>
       <Header />
+
     </div>
   )
 }
