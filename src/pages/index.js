@@ -1,24 +1,18 @@
-import { graphql } from "gatsby"
 import * as React from "react"
 import Header from "../components/Header"
 
 
 
-const IndexPage = ({ data }) => {
-  console.log(data, "Datattatatta")
+const IndexPage = () => {
+
   return (
     <div>
-      <Header />
 
+      <Header />
     </div>
   )
 }
 
 export default IndexPage
-export const query = graphql`
-  query ($databaseId: Int!) {
-    wpPage(databaseId: { eq: $databaseId }) {
-      title
-      content
-    }
-}`
+
+export const Head = () => <title>Home Page</title>
