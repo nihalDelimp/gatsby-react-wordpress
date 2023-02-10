@@ -18,7 +18,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     exactPath: true,
     isPermanent: false,
     redirectInBrowser: true,
-    toPath: '/home/',
+    toPath: '/homepage/',
   });
 
   // Query all the data
